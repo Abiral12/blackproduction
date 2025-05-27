@@ -98,7 +98,7 @@ require 'connect.php';
     <?php endfor; ?>
   </div>
 
-  <div class="max-w-7xl mx-auto relative z-10">
+  <a href="jersey.php"><div class="max-w-7xl mx-auto relative z-10">
     <div class="text-center mb-24">
       <span class="text-[#F67011] font-semibold tracking-widest text-sm uppercase">Exclusive Collections</span>
       <h2 class="text-5xl md:text-6xl font-extrabold mt-4 mb-8">
@@ -121,17 +121,7 @@ require 'connect.php';
             </div>
             
             <h3 class="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#F67011] to-[#F9A826]">Elite Jersey Series</h3>
-            <p class="text-gray-300/90 mb-6 leading-relaxed">Professional-grade jerseys with nano-fiber technology for ultimate performance.</p>
-            
-            <div class="flex justify-between items-center">
-              <a href="#" class="flex items-center text-[#F67011] group-hover:text-[#F9A826] transition-colors font-medium">
-                Discover More
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </a>
-              <!-- <span class="text-xs text-gray-500 group-hover:text-[#F9A826]/70 transition-colors">Starting at $89</span> -->
-            </div>
+            <p class="text-gray-300/90 mb-6 leading-relaxed">Professional-grade jerseys with nano-fiber technology for ultimate performance.</p>  
           </div>
           
           <!-- Hover shine effect -->
@@ -141,10 +131,10 @@ require 'connect.php';
             </div>
           </div>
         </div>
-      </div>
+      </div></a>
 
       <!-- Hoodie -->
-      <div class="group relative">
+      <a href="hoodie.php"><div class="group relative">
         <div class="absolute inset-0 bg-gradient-to-br from-[#F67011]/30 to-[#F9A826]/10 rounded-3xl transform group-hover:scale-105 transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
         
         <div class="h-full bg-[#1A191D]/80 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-8 transition-all duration-500 group-hover:border-[#F67011]/30 group-hover:shadow-2xl group-hover:shadow-[#F67011]/10 overflow-hidden">
@@ -156,17 +146,8 @@ require 'connect.php';
             </div>
             
             <h3 class="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#F67011] to-[#F9A826]">Luxury Hoodie Line</h3>
-            <p class="text-gray-300/90 mb-6 leading-relaxed">Premium heavyweight hoodies with custom embroidery and metallic foil options. Limited edition designs available.</p>
-            
-            <div class="flex justify-between items-center">
-              <a href="#" class="flex items-center text-[#F67011] group-hover:text-[#F9A826] transition-colors font-medium">
-                Discover More
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </a>
-              <!-- <span class="text-xs text-gray-500 group-hover:text-[#F9A826]/70 transition-colors">Starting at $79</span> -->
-            </div>
+            <p class="text-gray-300/90 mb-6 leading-relaxed">Premium heavyweight hoodies with custom embroidery and metallic foil options.</p>
+          
           </div>
           
           <!-- Hover shine effect -->
@@ -176,10 +157,10 @@ require 'connect.php';
             </div>
           </div>
         </div>
-      </div>
+      </div></a>
 
       <!-- Track Suit -->
-      <div class="group relative">
+      <a href=""><div class="group relative">
         <div class="absolute inset-0 bg-gradient-to-br from-[#F67011]/30 to-[#F9A826]/10 rounded-3xl transform group-hover:scale-105 transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
         
         <div class="h-full bg-[#1A191D]/80 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-8 transition-all duration-500 group-hover:border-[#F67011]/30 group-hover:shadow-2xl group-hover:shadow-[#F67011]/10 overflow-hidden">
@@ -193,15 +174,7 @@ require 'connect.php';
             <h3 class="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#F67011] to-[#F9A826]">Pro Track Collection</h3>
             <p class="text-gray-300/90 mb-6 leading-relaxed">High-performance tracksuits with aerodynamic design. Custom team colors and premium breathable fabric.</p>
             
-            <div class="flex justify-between items-center">
-              <a href="#" class="flex items-center text-[#F67011] group-hover:text-[#F9A826] transition-colors font-medium">
-                Discover More
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </a>
-              <!-- <span class="text-xs text-gray-500 group-hover:text-[#F9A826]/70 transition-colors">Starting at $129</span> -->
-            </div>
+           
           </div>
           
           <!-- Hover shine effect -->
@@ -211,7 +184,7 @@ require 'connect.php';
             </div>
           </div>
         </div>
-      </div>
+      </div></a>
     </div>
   </div>
 
@@ -237,6 +210,72 @@ require 'connect.php';
       animation-delay: 4s;
     }
   </style>
+</section>
+
+
+<!-- Top Events -->
+<section class="bg-[#121212] text-white py-16">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold text-orange-500">TOP EVENTS</h2>
+    <p class="mt-2 text-lg text-gray-300">See our custom jerseys in action at major sporting events worldwide</p>
+  </div>
+
+  <div class="mt-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+    <!-- Event 1 -->
+    <div class="bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg">
+      <div class="relative">
+        <img src="https://via.placeholder.com/400x200" alt="Championship Finals" class="w-full h-48 object-cover">
+        <div class="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">Live</div>
+        <div class="absolute top-2 right-2 bg-gray-800 text-white text-xs font-semibold px-2 py-1 rounded">Basketball</div>
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Championship Finals 2024</h3>
+        <p class="text-gray-400 mb-4">The ultimate showdown between top teams wearing custom BLCK jerseys.</p>
+        <p class="text-sm text-gray-400 mb-1">📅 March 15, 2024 — 🕖 7:00 PM</p>
+        <p class="text-sm text-gray-400 mb-1">📍 Madison Square Garden, NY</p>
+        <p class="text-sm text-gray-400 mb-4">👥 15,000+ attendees</p>
+        <button class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition">View Event Details</button>
+      </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg">
+      <div class="relative">
+        <img src="https://via.placeholder.com/400x200" alt="Soccer League Cup" class="w-full h-48 object-cover">
+        <div class="absolute top-2 left-2 bg-yellow-400 text-black text-xs font-semibold px-2 py-1 rounded">Upcoming</div>
+        <div class="absolute top-2 right-2 bg-gray-800 text-white text-xs font-semibold px-2 py-1 rounded">Soccer</div>
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Soccer League Cup</h3>
+        <p class="text-gray-400 mb-4">International teams competing in our premium soccer uniforms.</p>
+        <p class="text-sm text-gray-400 mb-1">📅 March 22, 2024 — 🕒 3:00 PM</p>
+        <p class="text-sm text-gray-400 mb-1">📍 Wembley Stadium, London</p>
+        <p class="text-sm text-gray-400 mb-4">👥 80,000+ attendees</p>
+        <button class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition">View Event Details</button>
+      </div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg">
+      <div class="relative">
+        <img src="https://via.placeholder.com/400x200" alt="Esports Tournament" class="w-full h-48 object-cover">
+        <div class="absolute top-2 left-2 bg-yellow-400 text-black text-xs font-semibold px-2 py-1 rounded">Upcoming</div>
+        <div class="absolute top-2 right-2 bg-gray-800 text-white text-xs font-semibold px-2 py-1 rounded">Esports</div>
+      </div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Esports Tournament</h3>
+        <p class="text-gray-400 mb-4">Gaming teams showcasing custom esports jerseys and merchandise.</p>
+        <p class="text-sm text-gray-400 mb-1">📅 March 28, 2024 — 🕛 12:00 PM</p>
+        <p class="text-sm text-gray-400 mb-1">📍 Los Angeles Convention Center</p>
+        <p class="text-sm text-gray-400 mb-4">👥 5,000+ attendees</p>
+        <button class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition">View Event Details</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-12">
+    <button class="bg-orange-500 text-white py-3 px-6 rounded hover:bg-orange-600 transition">View All Events</button>
+  </div>
 </section>
 
   <!-- Testimonials Section -->
