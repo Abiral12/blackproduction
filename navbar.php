@@ -35,7 +35,7 @@ require 'connect.php';
   }
 
   /* Nav links fade in one by one */
-  .fade-in {
+  /* .fade-in {
   opacity: 0;
   color: #F67011;
   animation: fadeInLink 0.6s ease forwards;
@@ -52,7 +52,7 @@ require 'connect.php';
     color: white; /* Change this to your default text color if needed */
     transform: translateY(0);
   }
-}
+} */
 
  /* Hide desktop nav on mobile */
   .nav-links {
@@ -98,17 +98,43 @@ require 'connect.php';
   </div>
 
   <!-- Mobile Menu (also used for desktop now) -->
-  <div id="mobile-menu" class="hidden bg-black w-full absolute left-0 top-full py-4 px-4 z-50">
+ <div id="mobile-menu" class="hidden bg-gradient-to-b from-gray-900 via-[#0a0a0a] to-[#0F0F0F] w-full absolute left-0 top-full py-4 px-4 z-50">
+  <!-- Content Container (needs higher z-index than decorative elements) -->
+  <div class="relative z-10"> <!-- Added z-10 here -->
     <div class="flex flex-col space-y-4 items-center">
-      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2">Home</a>
-      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2">Products</a>
-      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2">Contact Us</a>
-      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2">Know Us</a>
-      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2">Our services</a>
-      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2">Our Gallery</a>
-      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2">Social Links</a>
+      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2 w-full text-center">Home</a>
+      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2 w-full text-center">Jersey</a>
+      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2 w-full text-center">Hoodies</a>
+      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2 w-full text-center">Track suits</a>
+      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2 w-full text-center">Contact Us</a>
+      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2 w-full text-center">Know Us</a>
+      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2 w-full text-center">Our services</a>
+      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2 w-full text-center">Our works</a>
+      <a href="#" class="text-lg hover:text-[#F67011] transition font-medium py-2 w-full text-center">Social Links</a>
     </div>
   </div>
+
+  <!-- Decorative Background Elements (lower z-index) -->
+  <div class="absolute inset-0 overflow-hidden z-0"> <!-- Added z-0 here -->
+    <div class="absolute -left-20 -top-20 w-96 h-96 bg-[#F67011]/5 rounded-full filter blur-3xl animate-pulse"></div>
+    <div class="absolute -right-20 bottom-1/3 w-80 h-80 bg-[#F9A826]/5 rounded-full filter blur-3xl animate-pulse animation-delay-2000"></div>
+    <div class="absolute right-1/4 top-1/4 w-64 h-64 bg-[#F67011]/10 rounded-full filter blur-3xl animate-pulse animation-delay-4000"></div>
+  </div>
+
+  <!-- Floating particles -->
+  <div class="particles absolute inset-0 overflow-hidden z-0"> <!-- Added z-0 here -->
+    <?php for($i=0; $i<30; $i++): ?>
+      <div class="absolute rounded-full bg-[#F67011]/20 pointer-events-none" style="
+        width: <?= rand(2, 6) ?>px;
+        height: <?= rand(2, 6) ?>px;
+        top: <?= rand(0, 100) ?>%;
+        left: <?= rand(0, 100) ?>%;
+        animation: float <?= rand(10, 30) ?>s linear infinite;
+        animation-delay: -<?= rand(0, 20) ?>s;
+      "></div>
+    <?php endfor; ?>
+  </div>
+</div>
 </nav>
 
 

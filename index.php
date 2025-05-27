@@ -12,7 +12,7 @@ require 'connect.php';
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
     body {
@@ -38,7 +38,7 @@ require 'connect.php';
     }
   </style>
 </head>
-<body class="text-white bg-gray-900">
+<body class="text-white">
 
   <?php include 'navbar.php'; ?>
 
@@ -98,7 +98,7 @@ require 'connect.php';
     <?php endfor; ?>
   </div>
 
-  <a href="jersey.php"><div class="max-w-7xl mx-auto relative z-10">
+  <div class="max-w-7xl mx-auto relative z-10">
     <div class="text-center mb-24">
       <span class="text-[#F67011] font-semibold tracking-widest text-sm uppercase">Exclusive Collections</span>
       <h2 class="text-5xl md:text-6xl font-extrabold mt-4 mb-8">
@@ -109,7 +109,7 @@ require 'connect.php';
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
       <!-- Jersey -->
-      <div class="group relative">
+      <a href="jersey.php"><div class="group relative">
         <div class="absolute inset-0 bg-gradient-to-br from-[#F67011]/30 to-[#F9A826]/10 rounded-3xl transform group-hover:scale-105 transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
         
         <div class="h-full bg-[#1A191D]/80 backdrop-blur-sm border border-gray-800/50 rounded-3xl p-8 transition-all duration-500 group-hover:border-[#F67011]/30 group-hover:shadow-2xl group-hover:shadow-[#F67011]/10 overflow-hidden">
@@ -213,68 +213,345 @@ require 'connect.php';
 </section>
 
 
-<!-- Top Events -->
-<section class="bg-[#121212] text-white py-16">
-  <div class="max-w-7xl mx-auto px-4 text-center">
-    <h2 class="text-4xl font-bold text-orange-500">TOP EVENTS</h2>
-    <p class="mt-2 text-lg text-gray-300">See our custom jerseys in action at major sporting events worldwide</p>
+
+<!-- Top Events Section -->
+<section id="top-events" class="relative bg-gradient-to-b from-gray-900 via-[#0a0a0a] to-[#0F0F0F] text-white py-28 px-6 overflow-hidden">
+  <!-- Animated background elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none ">
+    <div class="absolute -left-20 -top-20 w-96 h-96 bg-[#F67011]/5 rounded-full filter blur-3xl animate-pulse"></div>
+    <div class="absolute -right-20 bottom-1/3 w-80 h-80 bg-[#F9A826]/5 rounded-full filter blur-3xl animate-pulse animation-delay-2000"></div>
+    <div class="absolute right-1/4 top-1/4 w-64 h-64 bg-[#F67011]/10 rounded-full filter blur-3xl animate-pulse animation-delay-4000"></div>
   </div>
 
-  <div class="mt-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-    <!-- Event 1 -->
-    <div class="bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg">
-      <div class="relative">
-        <img src="https://via.placeholder.com/400x200" alt="Championship Finals" class="w-full h-48 object-cover">
-        <div class="absolute top-2 left-2 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">Live</div>
-        <div class="absolute top-2 right-2 bg-gray-800 text-white text-xs font-semibold px-2 py-1 rounded">Basketball</div>
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-bold mb-2">Championship Finals 2024</h3>
-        <p class="text-gray-400 mb-4">The ultimate showdown between top teams wearing custom BLCK jerseys.</p>
-        <p class="text-sm text-gray-400 mb-1">📅 March 15, 2024 — 🕖 7:00 PM</p>
-        <p class="text-sm text-gray-400 mb-1">📍 Madison Square Garden, NY</p>
-        <p class="text-sm text-gray-400 mb-4">👥 15,000+ attendees</p>
-        <button class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition">View Event Details</button>
-      </div>
-    </div>
-
-    <!-- Event 2 -->
-    <div class="bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg">
-      <div class="relative">
-        <img src="https://via.placeholder.com/400x200" alt="Soccer League Cup" class="w-full h-48 object-cover">
-        <div class="absolute top-2 left-2 bg-yellow-400 text-black text-xs font-semibold px-2 py-1 rounded">Upcoming</div>
-        <div class="absolute top-2 right-2 bg-gray-800 text-white text-xs font-semibold px-2 py-1 rounded">Soccer</div>
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-bold mb-2">Soccer League Cup</h3>
-        <p class="text-gray-400 mb-4">International teams competing in our premium soccer uniforms.</p>
-        <p class="text-sm text-gray-400 mb-1">📅 March 22, 2024 — 🕒 3:00 PM</p>
-        <p class="text-sm text-gray-400 mb-1">📍 Wembley Stadium, London</p>
-        <p class="text-sm text-gray-400 mb-4">👥 80,000+ attendees</p>
-        <button class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition">View Event Details</button>
-      </div>
-    </div>
-
-    <!-- Event 3 -->
-    <div class="bg-[#1e1e1e] rounded-xl overflow-hidden shadow-lg">
-      <div class="relative">
-        <img src="https://via.placeholder.com/400x200" alt="Esports Tournament" class="w-full h-48 object-cover">
-        <div class="absolute top-2 left-2 bg-yellow-400 text-black text-xs font-semibold px-2 py-1 rounded">Upcoming</div>
-        <div class="absolute top-2 right-2 bg-gray-800 text-white text-xs font-semibold px-2 py-1 rounded">Esports</div>
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-bold mb-2">Esports Tournament</h3>
-        <p class="text-gray-400 mb-4">Gaming teams showcasing custom esports jerseys and merchandise.</p>
-        <p class="text-sm text-gray-400 mb-1">📅 March 28, 2024 — 🕛 12:00 PM</p>
-        <p class="text-sm text-gray-400 mb-1">📍 Los Angeles Convention Center</p>
-        <p class="text-sm text-gray-400 mb-4">👥 5,000+ attendees</p>
-        <button class="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition">View Event Details</button>
-      </div>
-    </div>
+  <!-- Floating particles -->
+  <div class="particles absolute inset-0 overflow-hidden pointer-events-none">
+    <?php for($i=0; $i<30; $i++): ?>
+      <div class="absolute rounded-full bg-[#F67011]/20" style="
+        width: <?= rand(2, 6) ?>px;
+        height: <?= rand(2, 6) ?>px;
+        top: <?= rand(0, 100) ?>%;
+        left: <?= rand(0, 100) ?>%;
+        animation: float <?= rand(10, 30) ?>s linear infinite;
+        animation-delay: -<?= rand(0, 20) ?>s;
+      "></div>
+    <?php endfor; ?>
   </div>
 
-  <div class="text-center mt-12">
-    <button class="bg-orange-500 text-white py-3 px-6 rounded hover:bg-orange-600 transition">View All Events</button>
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="text-center mb-16">
+      <span class="text-[#F67011] font-semibold tracking-widest text-sm uppercase">Featured Events</span>
+      <h2 class="text-5xl md:text-6xl font-extrabold mt-4 mb-6">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F67011] via-[#F9A826] to-[#F67011] animate-gradient-x">Top</span> Events
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto">See our premium custom jerseys in action at major sporting events worldwide</p>
+      <div class="w-24 h-1.5 bg-gradient-to-r from-transparent via-[#F67011] to-transparent mx-auto mt-6"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Event 1 -->
+      <div class="group relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#F67011]/30 to-[#F9A826]/10 rounded-3xl transform group-hover:scale-105 transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
+        
+        <div class="h-full bg-[#1A191D]/80 backdrop-blur-sm border border-gray-800/50 rounded-3xl overflow-hidden transition-all duration-500 group-hover:border-[#F67011]/30 group-hover:shadow-2xl group-hover:shadow-[#F67011]/10">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" 
+                 alt="Championship Finals" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute top-4 left-4 bg-[#F67011] text-white text-xs font-semibold px-3 py-1 rounded-full">Live</div>
+            <div class="absolute top-4 right-4 bg-gray-900/80 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Basketball</div>
+          </div>
+          
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-white">Championship Finals 2024</h3>
+            <p class="text-gray-400 mb-5">The ultimate showdown between top teams wearing custom BLCK jerseys.</p>
+            
+            <div class="flex items-center text-gray-400 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span class="text-sm">March 15, 2024 — 7:00 PM</span>
+            </div>
+            
+            <div class="flex items-center text-gray-400 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span class="text-sm">Madison Square Garden, NY</span>
+            </div>
+            
+            <div class="flex items-center text-gray-400 mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <span class="text-sm">15,000+ attendees</span>
+            </div>
+            
+            <a href="events.php"><button class="-z-100000 w-full bg-gradient-to-r from-[#F67011]/90 to-[#F9A826]/90 text-white py-2.5 px-5 rounded-lg text-sm font-medium transition-all duration-300 transform group-hover:scale-[1.02] group-hover:shadow-md group-hover:shadow-[#F67011]/20">
+              View Event Details
+            </button></a>
+          </div>
+          
+          <!-- Hover shine effect -->
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#F67011]/10 to-transparent transform rotate-45 translate-x-full group-hover:-translate-x-full transition-transform duration-1000"></div></div>
+          
+      </div>
+
+      <!-- Event 2 -->
+      <div class="group relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#F67011]/30 to-[#F9A826]/10 rounded-3xl transform group-hover:scale-105 transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
+        
+        <div class="h-full bg-[#1A191D]/80 backdrop-blur-sm border border-gray-800/50 rounded-3xl overflow-hidden transition-all duration-500 group-hover:border-[#F67011]/30 group-hover:shadow-2xl group-hover:shadow-[#F67011]/10">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" 
+                 alt="Soccer League Cup" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute top-4 left-4 bg-[#F9A826] text-gray-900 text-xs font-semibold px-3 py-1 rounded-full">Upcoming</div>
+            <div class="absolute top-4 right-4 bg-gray-900/80 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Soccer</div>
+          </div>
+          
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-white">Soccer League Cup</h3>
+            <p class="text-gray-400 mb-5">International teams competing in our premium soccer uniforms.</p>
+            
+            <div class="flex items-center text-gray-400 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span class="text-sm">March 22, 2024 — 3:00 PM</span>
+            </div>
+            
+            <div class="flex items-center text-gray-400 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span class="text-sm">Wembley Stadium, London</span>
+            </div>
+            
+            <div class="flex items-center text-gray-400 mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <span class="text-sm">80,000+ attendees</span>
+            </div>
+            
+            <button class="w-full bg-gradient-to-r from-[#F67011]/90 to-[#F9A826]/90 text-white py-2.5 px-5 rounded-lg text-sm font-medium transition-all duration-300 transform group-hover:scale-[1.02] group-hover:shadow-md group-hover:shadow-[#F67011]/20">
+              View Event Details
+            </button>
+          </div>
+          
+          <!-- Hover shine effect -->
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#F67011]/10 to-transparent transform rotate-45 translate-x-full group-hover:-translate-x-full transition-transform duration-1000"></div></div>
+          
+      </div>
+
+      <!-- Event 3 -->
+      <div class="group relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#F67011]/30 to-[#F9A826]/10 rounded-3xl transform group-hover:scale-105 transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
+        
+        <div class="h-full bg-[#1A191D]/80 backdrop-blur-sm border border-gray-800/50 rounded-3xl overflow-hidden transition-all duration-500 group-hover:border-[#F67011]/30 group-hover:shadow-2xl group-hover:shadow-[#F67011]/10">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" 
+                 alt="Esports Tournament" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute top-4 left-4 bg-[#F9A826] text-gray-900 text-xs font-semibold px-3 py-1 rounded-full">Upcoming</div>
+            <div class="absolute top-4 right-4 bg-gray-900/80 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Esports</div>
+          </div>
+          
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-white">Esports Tournament</h3>
+            <p class="text-gray-400 mb-5">Gaming teams showcasing custom esports jerseys and merchandise.</p>
+            
+            <div class="flex items-center text-gray-400 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span class="text-sm">March 28, 2024 — 12:00 PM</span>
+            </div>
+            
+            <div class="flex items-center text-gray-400 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span class="text-sm">Los Angeles Convention Center</span>
+            </div>
+            
+            <div class="flex items-center text-gray-400 mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <span class="text-sm">5,000+ attendees</span>
+            </div>
+            
+            <button class="w-full bg-gradient-to-r from-[#F67011]/90 to-[#F9A826]/90 text-white py-2.5 px-5 rounded-lg text-sm font-medium transition-all duration-300 transform group-hover:scale-[1.02] group-hover:shadow-md group-hover:shadow-[#F67011]/20">
+              View Event Details
+            </button>
+          </div>
+          
+           <!-- Hover shine effect -->
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#F67011]/10 to-transparent transform rotate-45 translate-x-full group-hover:-translate-x-full transition-transform duration-1000"></div></div>
+           
+      </div>
+    </div>
+
+    <div class="text-center mt-16">
+      <button class="relative inline-flex items-center justify-center px-8 py-3.5 overflow-hidden font-medium text-[#F67011] transition duration-300 ease-out border-2 border-[#F67011] rounded-full group">
+        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#F67011] group-hover:translate-x-0 ease">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </span>
+        <span class="absolute flex items-center justify-center w-full h-full text-[#F67011] transition-all duration-300 transform group-hover:translate-x-full ease">View All Events</span>
+        <span class="relative invisible">View All Events</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Sports Team Section -->
+<section id="sport-team" class="relative bg-gradient-to-b from-gray-900 via-[#0a0a0a] to-[#0F0F0F] text-white py-28 px-6 overflow-hidden">
+  <!-- Animated background elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none ">
+    <div class="absolute -left-20 -top-20 w-96 h-96 bg-[#F67011]/5 rounded-full filter blur-3xl animate-pulse"></div>
+    <div class="absolute -right-20 bottom-1/3 w-80 h-80 bg-[#F9A826]/5 rounded-full filter blur-3xl animate-pulse animation-delay-2000"></div>
+    <div class="absolute right-1/4 top-1/4 w-64 h-64 bg-[#F67011]/10 rounded-full filter blur-3xl animate-pulse animation-delay-4000"></div>
+  </div>
+
+  <!-- Floating particles -->
+  <div class="particles absolute inset-0 overflow-hidden pointer-events-none">
+    <?php for($i=0; $i<30; $i++): ?>
+      <div class="absolute rounded-full bg-[#F67011]/20" style="
+        width: <?= rand(2, 6) ?>px;
+        height: <?= rand(2, 6) ?>px;
+        top: <?= rand(0, 100) ?>%;
+        left: <?= rand(0, 100) ?>%;
+        animation: float <?= rand(10, 30) ?>s linear infinite;
+        animation-delay: -<?= rand(0, 20) ?>s;
+      "></div>
+    <?php endfor; ?>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="text-center mb-16">
+      <span class="text-[#F67011] font-semibold tracking-widest text-sm uppercase">Featured E-Sport Teams</span>
+      <h2 class="text-5xl md:text-6xl font-extrabold mt-4 mb-6">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F67011] via-[#F9A826] to-[#F67011] animate-gradient-x">E-sport Team</span> 
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto">See our premium custom jerseys in action at major sporting events worldwide</p>
+      <div class="w-24 h-1.5 bg-gradient-to-r from-transparent via-[#F67011] to-transparent mx-auto mt-6"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Team 1 -->
+      <div class="group relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#F67011]/30 to-[#F9A826]/10 rounded-3xl transform group-hover:scale-105 transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
+        
+        <div class="h-full bg-[#1A191D]/80 backdrop-blur-sm border border-gray-800/50 rounded-3xl overflow-hidden transition-all duration-500 group-hover:border-[#F67011]/30 group-hover:shadow-2xl group-hover:shadow-[#F67011]/10">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" 
+                 alt="Championship Finals" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-white">DRS Gaming</h3>
+            <p class="text-gray-400 mb-5">Dominating the Arena, One Victory at a Time.</p>
+                        
+            <div class="flex items-center text-gray-400 mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <span class="text-sm">128,000+ </span>
+            </div>
+            
+            <a href="events.php"><button class="-z-100000 w-full bg-gradient-to-r from-[#F67011]/90 to-[#F9A826]/90 text-white py-2.5 px-5 rounded-lg text-sm font-medium transition-all duration-300 transform group-hover:scale-[1.02] group-hover:shadow-md group-hover:shadow-[#F67011]/20">
+              View Event Details
+            </button></a>
+          </div>
+          
+          <!-- Hover shine effect -->
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#F67011]/10 to-transparent transform rotate-45 translate-x-full group-hover:-translate-x-full transition-transform duration-1000"></div></div>
+          
+      </div>
+
+            <!-- Team 2 -->
+      <div class="group relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#F67011]/30 to-[#F9A826]/10 rounded-3xl transform group-hover:scale-105 transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
+        
+        <div class="h-full bg-[#1A191D]/80 backdrop-blur-sm border border-gray-800/50 rounded-3xl overflow-hidden transition-all duration-500 group-hover:border-[#F67011]/30 group-hover:shadow-2xl group-hover:shadow-[#F67011]/10">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" 
+                 alt="Championship Finals" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-white">DRS Gaming</h3>
+            <p class="text-gray-400 mb-5">Dominating the Arena, One Victory at a Time.</p>
+                        
+            <div class="flex items-center text-gray-400 mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <span class="text-sm">128,000+ </span>
+            </div>
+            
+            <a href="events.php"><button class="-z-100000 w-full bg-gradient-to-r from-[#F67011]/90 to-[#F9A826]/90 text-white py-2.5 px-5 rounded-lg text-sm font-medium transition-all duration-300 transform group-hover:scale-[1.02] group-hover:shadow-md group-hover:shadow-[#F67011]/20">
+              View Event Details
+            </button></a>
+          </div>
+          
+          <!-- Hover shine effect -->
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#F67011]/10 to-transparent transform rotate-45 translate-x-full group-hover:-translate-x-full transition-transform duration-1000"></div></div>
+          
+      </div>
+
+            <!-- Team 3 -->
+      <div class="group relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#F67011]/30 to-[#F9A826]/10 rounded-3xl transform group-hover:scale-105 transition-all duration-700 opacity-0 group-hover:opacity-100 -z-10"></div>
+        
+        <div class="h-full bg-[#1A191D]/80 backdrop-blur-sm border border-gray-800/50 rounded-3xl overflow-hidden transition-all duration-500 group-hover:border-[#F67011]/30 group-hover:shadow-2xl group-hover:shadow-[#F67011]/10">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" 
+                 alt="Championship Finals" 
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-white">DRS Gaming</h3>
+            <p class="text-gray-400 mb-5">Dominating the Arena, One Victory at a Time.</p>
+                        
+            <div class="flex items-center text-gray-400 mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-[#F67011]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <span class="text-sm">128,000+ </span>
+            </div>
+            
+            <a href="events.php"><button class="-z-100000 w-full bg-gradient-to-r from-[#F67011]/90 to-[#F9A826]/90 text-white py-2.5 px-5 rounded-lg text-sm font-medium transition-all duration-300 transform group-hover:scale-[1.02] group-hover:shadow-md group-hover:shadow-[#F67011]/20">
+              View Event Details
+            </button></a>
+          </div>
+          
+          <!-- Hover shine effect -->
+              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#F67011]/10 to-transparent transform rotate-45 translate-x-full group-hover:-translate-x-full transition-transform duration-1000"></div></div>
+          
+      </div>
+    </div>
+
+    <div class="text-center mt-16">
+      <button class="relative inline-flex items-center justify-center px-8 py-3.5 overflow-hidden font-medium text-[#F67011] transition duration-300 ease-out border-2 border-[#F67011] rounded-full group">
+        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#F67011] group-hover:translate-x-0 ease">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </span>
+        <span class="absolute flex items-center justify-center w-full h-full text-[#F67011] transition-all duration-300 transform group-hover:translate-x-full ease">View All Events</span>
+        <span class="relative invisible">View All Teams</span>
+      </button>
+    </div>
   </div>
 </section>
 
@@ -377,6 +654,6 @@ require 'connect.php';
   </section>
 
   
-
+<?php include 'footer.php'; ?>
 </body>
 </html>
