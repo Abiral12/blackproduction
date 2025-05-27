@@ -117,7 +117,7 @@ require 'connect.php';
             <!-- Floating image container -->
             <div class="bg-gradient-to-br from-[#1A191D] to-gray-900 rounded-2xl p-1 mb-8 h-60 flex items-center justify-center overflow-hidden border border-gray-800/50 group-hover:border-[#F67011]/30 transition-all duration-500">
               <div class="absolute inset-0 bg-[url('./images/dot-pattern.png')] opacity-10"></div>
-              <img src="./images/jersey-hero.jpg" alt="Jersey" class="relative z-10 h-full object-contain transition-transform duration-700 group-hover:scale-110">
+              <img src="./images/jersey1.png" alt="Jersey" class="relative z-10 h-full object-contain transition-transform duration-700 group-hover:scale-110">
             </div>
             
             <h3 class="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#F67011] to-[#F9A826]">Elite Jersey Series</h3>
@@ -187,7 +187,7 @@ require 'connect.php';
             <!-- Floating image container -->
             <div class="bg-gradient-to-br from-[#1A191D] to-gray-900 rounded-2xl p-1 mb-8 h-60 flex items-center justify-center overflow-hidden border border-gray-800/50 group-hover:border-[#F67011]/30 transition-all duration-500">
               <div class="absolute inset-0 bg-[url('./images/dot-pattern.png')] opacity-10"></div>
-              <img src="./images/tracksuit.png" alt="Track Suit" class="relative z-10 h-full object-contain transition-transform duration-700 group-hover:scale-110">
+              <img src="./images/tracksuit1.png" alt="Track Suit" class="relative z-10 h-full object-contain transition-transform duration-700 group-hover:scale-110">
             </div>
             
             <h3 class="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#F67011] to-[#F9A826]">Pro Track Collection</h3>

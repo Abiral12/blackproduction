@@ -54,6 +54,16 @@ require 'connect.php';
   }
 }
 
+ /* Hide desktop nav on mobile */
+  .nav-links {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .nav-links {
+      display: flex !important;
+    }
+  }
 
   /* Hide desktop nav on all sizes */
   .hide-links {
